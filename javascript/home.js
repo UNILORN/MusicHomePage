@@ -4,14 +4,17 @@ function onYouTubeIframeAPIReady() {
             {
                 videoId: 'NseG5Waxktw', // YouTubeのID
                 playerVars: {
+                    rel:0,
                     loop: 1,//0:ループしない 1:ループする 1の場合playlist設定必須
+                    playlist:'NseG5Waxktw',
                     controls: 0,//コントローラー無し
                     autoplay: 1,//オートプレイ
                     showinfo: 0,//動画タイトルなど表示しない
                     start:40
                 },
                 events: {
-                    'onReady': onPlayerReady
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
                 }
             }
         );
@@ -22,11 +25,38 @@ function onYouTubeIframeAPIReady() {
         event.target.mute();
       }
 
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING) {
+          $('.loading').fadeOut(500);
+          setTimeout(showvideo, 500);
+        }
+      }
+
+      function showvideo(){
+        $('.innerplayer').fadeIn(3000);
+      }
+
+
 
 $(function() {
   $(window).scroll(function(){
     var y = $(this).scrollTop();
-    $('.innerplayer').css('top', '0 ' + parseInt( -y / 40 ) + 'px');
+    $('.innerplayer').css('top', parseInt( y / 2 ) + 'px');
+    $('.inner-about').css('top', parseInt( 800+ (y / 2.5) ) + 'px');
+    $('.inner-music').css('top', parseInt( 1500+ (y / 2.5) ) + 'px');
+  });
 
+  $('.nav_about').click(function(){
+    var i = $(".nav_about").index(this)
+    var p = $(".cont-about").eq(i).offset().top;
+    $('html,body').animate({ scrollTop: p }, 'slow');
+        return false;
+  });
+
+  $('.nav_music').click(function(){
+    var i = $(".nav_music").index(this)
+    var p = $(".cont-music").eq(i).offset().top;
+    $('html,body').animate({ scrollTop: p }, 'slow');
+        return false;
   });
 });

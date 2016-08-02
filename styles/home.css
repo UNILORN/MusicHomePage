@@ -5,16 +5,106 @@
   width: 100%;
   height: 100%;
 }
-
-.aaa{
-  height: 2000px;
+.innerplayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 800px;
+  display: none;
+}
+.innerplayer .bglay{
+    background: url(../images/bg.png) repeat;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index:10;
 }
 nav{
   position: absolute;
   top:20px;
   background-color: rgba(0, 0, 0, 0);
-  z-index:1;
+  z-index:50;
 }
 .nav-wrapper ul li{
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.loading{
+  position: absolute;
+  top: 50%;
+  width:100%;
+  height: 50%;
+}
+
+.back{
+  float:left;
+  width: 100%;
+  height: 1000px;
+}
+
+.cont-top{
+  position:absolute;
+  top:250px;
+  left:0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  z-index:50;
+}
+.cont-top h1{
+  background-color: #FFFFFF;
+  margin-left:20%;
+  margin-right: 20%;
+  height:100px;
+}
+.cont-about{
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  top:800px;
+  background-color: #ffcdd2;
+  z-index:50;
+}
+
+.bglay-a{
+    background: url(../images/bg.png) repeat;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index:10;
+}
+.inner-about{
+  background: url(../images/bg2.jpg);
+  background-position: center;
+  position: absolute;
+  height: 700px;
+  width: 100%;
+  z-index:20;
+}
+
+.inner-music{
+  background: url(../images/bg3.jpg);
+  background-position: center;
+  position: absolute;
+  height: 600px;
+  width: 100%;
+  z-index:20;
+}
+.cont-music{
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  top:1900px;
+  background-color: #80cbc4 ;
+  z-index:50;
+}
+
+.nonenone{
+  position:absolute;
+  top:4000px;
+  width: 100%;
+  height: 4000px;
 }

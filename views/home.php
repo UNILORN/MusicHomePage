@@ -10,10 +10,44 @@
   </div>
 </nav>
 
+<div class="loading">
+  <div class="progress container">
+      <div class="indeterminate"></div>
+  </div>
+</div>
+
 <main>
-  <div class="innerplayer">
-    <div id="player"></div>
-    <div class="aaa">
+  <div class="back">
+    <div class="innerplayer">
+      <div id="player"></div>
+      <div class="bglay"></div>
     </div>
+    <div class="cont-top">
+      <h1>title</h1>
+    </div>
+  </div>
+
+
+  <div class="back container">
+    <div class="inner-about">
+      <div class="bglay-a"></div>
+    </div>
+    <div class="cont-about">
+      contents
+    </div>
+  </div>
+
+  <div class="back container">
+    <div class="inner-music">
+      <div class="bglay-a"></div>
+    </div>
+    <div class="cont-music">
+      contents
+    </div>
+  </div>
+
+
+  <div class="nonenone">
+
   </div>
 </main>
