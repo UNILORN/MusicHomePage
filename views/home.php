@@ -28,7 +28,7 @@
   </div>
 
 
-  <div class="back container">
+  <div class="back">
     <div class="inner-about">
       <div class="bglay-a"></div>
     </div>
@@ -37,7 +37,7 @@
     </div>
   </div>
 
-  <div class="back container">
+  <div class="back">
     <div class="inner-music">
       <div class="bglay-a"></div>
     </div>

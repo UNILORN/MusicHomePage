@@ -41,9 +41,12 @@ function onYouTubeIframeAPIReady() {
 $(function() {
   $(window).scroll(function(){
     var y = $(this).scrollTop();
-    $('.innerplayer').css('top', parseInt( y / 2 ) + 'px');
-    $('.inner-about').css('top', parseInt( 850+ (y / 3) ) + 'px');
-    $('.inner-music').css('top', parseInt( 1600+ (y / 3) ) + 'px');
+    $('.innerplayer').css('top', parseInt( y ) + 'px');
+    var i = $(".nav_music").index(this);
+    var p = $(".inner-about").eq(i).offset().top;
+      if(y < p){ $('.inner-about').css('top', parseInt( 850+ (y / 3) ) + 'px');　}
+      else{      $('.inner-about').css('top', parseInt( y ) + 'px');             }
+      $('.inner-music').css('top', parseInt( 1600+ (y / 3) ) + 'px');
   });
 
   $('.nav_about').click(function(){
@@ -54,7 +57,7 @@ $(function() {
   });
 
   $('.nav_music').click(function(){
-    var i = $(".nav_music").index(this)
+    var i = $(".nav_music").index(this);
     var p = $(".cont-music").eq(i).offset().top;
     $('html,body').animate({ scrollTop: p }, 'slow');
         return false;

@@ -83,6 +83,7 @@ nav{
   background: url(../images/bg2.jpg);
   background-position: center;
   position: absolute;
+  top:850px;
   height: 700px;
   width: 100%;
   z-index:20;
@@ -92,6 +93,7 @@ nav{
   background: url(../images/bg3.jpg);
   background-position: center;
   position: absolute;
+  top:1600px;
   height: 600px;
   width: 100%;
   z-index:20;
