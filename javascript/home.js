@@ -42,8 +42,8 @@ $(function() {
   $(window).scroll(function(){
     var y = $(this).scrollTop();
     $('.innerplayer').css('top', parseInt( y / 2 ) + 'px');
-    $('.inner-about').css('top', parseInt( 800+ (y / 2.5) ) + 'px');
-    $('.inner-music').css('top', parseInt( 1500+ (y / 2.5) ) + 'px');
+    $('.inner-about').css('top', parseInt( 850+ (y / 3) ) + 'px');
+    $('.inner-music').css('top', parseInt( 1600+ (y / 3) ) + 'px');
   });
 
   $('.nav_about').click(function(){
