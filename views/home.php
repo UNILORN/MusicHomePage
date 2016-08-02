@@ -23,7 +23,7 @@
       <div class="bglay"></div>
     </div>
     <div class="cont-top">
-      <h1>title</h1>
+      <h1 class="z-depth-3" >title</h1>
     </div>
   </div>
 
@@ -32,7 +32,7 @@
     <div class="inner-about">
       <div class="bglay-a"></div>
     </div>
-    <div class="cont-about">
+    <div class="cont-about z-depth-3">
       contents
     </div>
   </div>
@@ -41,7 +41,7 @@
     <div class="inner-music">
       <div class="bglay-a"></div>
     </div>
-    <div class="cont-music">
+    <div class="cont-music z-depth-3">
       contents
     </div>
   </div>
