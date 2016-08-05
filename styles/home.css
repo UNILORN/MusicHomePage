@@ -54,65 +54,7 @@ nav{
   z-index:50;
 }
 .cont-top h1{
-  background-color: #FFFFFF;
   margin-left:20%;
   margin-right: 20%;
   height:100px;
-}
-.cont-about{
-  position: absolute;
-  width: 100%;
-  height: 600px;
-  top:800px;
-  background-color: #ffcdd2;
-  border: 5px solid #FFFFFF;
-  margin:-5px;
-  margin-left: 0;
-  z-index:50;
-}
-
-.bglay-a{
-    background: url(../images/bg.png) repeat;
-    background-color: rgba(0, 0, 0, 0.2);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index:10;
-}
-.inner-about{
-  background: url(../images/bg2.jpg);
-  background-position: center;
-  position: absolute;
-  top:850px;
-  height: 700px;
-  width: 100%;
-  z-index:20;
-}
-
-.inner-music{
-  background: url(../images/bg3.jpg);
-  background-position: center;
-  position: absolute;
-  top:1600px;
-  height: 600px;
-  width: 100%;
-  z-index:20;
-}
-.cont-music{
-  position: absolute;
-  width: 100%;
-  height: 600px;
-  top:1900px;
-  background-color: #80cbc4 ;
-  border: 5px solid #FFFFFF;
-  margin:-5px;
-  margin-left: 0;
-  z-index:50;
-}
-
-.nonenone{
-  position:absolute;
-  top:4000px;
-  width: 100%;
-  height: 4000px;
 }

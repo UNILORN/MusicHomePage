@@ -38,16 +38,7 @@ function onYouTubeIframeAPIReady() {
 
 
 
-$(function() {
-  $(window).scroll(function(){
-    var y = $(this).scrollTop();
-    $('.innerplayer').css('top', parseInt( y ) + 'px');
-    var i = $(".nav_music").index(this);
-    var p = $(".inner-about").eq(i).offset().top;
-      if(y < p){ $('.inner-about').css('top', parseInt( 850+ (y / 3) ) + 'px');　}
-      else{      $('.inner-about').css('top', parseInt( y ) + 'px');             }
-      $('.inner-music').css('top', parseInt( 1600+ (y / 3) ) + 'px');
-  });
+
 
   $('.nav_about').click(function(){
     var i = $(".nav_about").index(this)
@@ -62,4 +53,3 @@ $(function() {
     $('html,body').animate({ scrollTop: p }, 'slow');
         return false;
   });
-});
